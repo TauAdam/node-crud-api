@@ -7,16 +7,18 @@
   "scripts": {
     "start:dev": "npx nodemon",
     "build": "rimraf ./dist && npx tsc",
-    "start:prod": "yarn build && node build/index"
+    "start:prod": "yarn build && node dist/index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.0",
+    "@types/uuid": "^9.0.2",
     "nodemon": "^2.0.22",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
